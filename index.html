@@ -1,42 +1,226 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajani Saikia - Official Website</title>
-    <meta name="description" content="Welcome to the official website of Rajani Saikia.">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Rajani Saikia - Official Website & Links</title>
+    <meta name="title" content="Rajani Saikia - Official Website & Links">
+    <meta name="description" content="Official portfolio of Rajani Saikia (RAZZ), a Digital Creator and Influencer from Nagaon, Assam. Explore social links and content.">
+    <meta name="keywords" content="Rajani Saikia, RAZZ, Rajani Saikia Assam, Content Creator Nagaon, Rajani Saikia Instagram, Rajani Saikia Facebook, Rajani Saikia YouTube">
+    <meta name="author" content="Rajani Saikia">
+    <meta name="robots" content="index, follow">
+
+    <!-- Schema.org Structured Data for Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rajani Saikia",
+      "alternateName": "RAZZ",
+      "jobTitle": "Digital Creator & Influencer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nagaon",
+        "addressRegion": "Assam",
+        "addressCountry": "India"
+      },
+      "url": "https://rajanisaikia.github.io",
+      "sameAs": [
+        "https://www.instagram.com/saikia_lora_46",
+        "https://www.facebook.com/profile.php?id=61593109409585",
+        "https://youtube.com/@joshimomentofficial"
+      ]
+    }
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        body { background-color: #0f172a; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
-        .container { max-width: 600px; margin: 0 auto; padding: 40px 20px; text-align: center; }
-        .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #38bdf8; object-fit: cover; margin-bottom: 20px; box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4); }
-        h1 { font-size: 2.2rem; font-weight: 700; color: #ffffff; margin-bottom: 8px; }
-        .badge { display: inline-block; background: linear-gradient(135deg, #38bdf8, #818cf8); color: #0f172a; font-size: 0.85rem; font-weight: 600; padding: 4px 14px; border-radius: 20px; margin-bottom: 20px; }
-        .bio { font-size: 1rem; color: #94a3b8; line-height: 1.6; margin-bottom: 35px; background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); }
-        .links-container { display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px; }
-        .link-card { background: #1e293b; color: #38bdf8; text-decoration: none; padding: 16px 20px; border-radius: 12px; font-weight: 600; font-size: 1rem; border: 1px solid rgba(56, 189, 248, 0.2); transition: all 0.3s ease; }
-        .link-card:hover { background: #38bdf8; color: #0f172a; transform: translateY(-3px); }
-        footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.85rem; }
+        
+        body { 
+            background-color: #0f172a; 
+            color: #f8fafc; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            overflow-x: hidden;
+        }
+
+        .container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            text-align: center;
+            animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Profile Image Floating Animation */
+        .profile-img-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .profile-img { 
+            width: 140px; 
+            height: 140px; 
+            border-radius: 50%; 
+            border: 4px solid #38bdf8; 
+            object-fit: cover; 
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4); 
+            animation: floatImage 4s ease-in-out infinite;
+        }
+
+        h1 { 
+            font-size: 2.2rem; 
+            font-weight: 700; 
+            color: #ffffff; 
+            margin-bottom: 8px; 
+            letter-spacing: 0.5px;
+        }
+
+        /* Badge Pulse Animation */
+        .badge { 
+            display: inline-block; 
+            background: linear-gradient(135deg, #38bdf8, #818cf8); 
+            color: #0f172a; 
+            font-size: 0.85rem; 
+            font-weight: 600; 
+            padding: 6px 16px; 
+            border-radius: 20px; 
+            margin-bottom: 25px; 
+            animation: badgePulse 2s ease-in-out infinite;
+        }
+
+        /* Bio Container */
+        .bio { 
+            font-size: 0.98rem; 
+            color: #94a3b8; 
+            line-height: 1.7; 
+            margin-bottom: 35px; 
+            background: rgba(30, 41, 59, 0.6); 
+            padding: 22px 20px; 
+            border-radius: 16px; 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            backdrop-filter: blur(8px);
+            text-align: center;
+        }
+
+        .bio strong {
+            color: #38bdf8;
+        }
+
+        /* Link Cards Container & Floating Animation */
+        .links-container { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 16px; 
+            margin-bottom: 40px; 
+        }
+
+        .link-card { 
+            position: relative;
+            background: #1e293b; 
+            color: #38bdf8; 
+            text-decoration: none; 
+            padding: 16px 20px; 
+            border-radius: 12px; 
+            font-weight: 600; 
+            font-size: 1rem; 
+            border: 1px solid rgba(56, 189, 248, 0.2); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 12px; 
+            overflow: hidden;
+            animation: floatButton 5s ease-in-out infinite;
+        }
+
+        /* Continuous Floating with staggered delays */
+        .link-card:nth-child(1) { animation-delay: 0s; }
+        .link-card:nth-child(2) { animation-delay: 0.8s; }
+        .link-card:nth-child(3) { animation-delay: 1.6s; }
+
+        .link-card i { 
+            font-size: 1.25rem; 
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .link-card:hover { 
+            background: linear-gradient(135deg, #38bdf8, #818cf8); 
+            color: #0f172a; 
+            transform: translateY(-6px) scale(1.03); 
+            box-shadow: 0 12px 20px rgba(56, 189, 248, 0.35);
+            border-color: transparent;
+            animation-play-state: paused;
+        }
+
+        .link-card:hover i {
+            transform: scale(1.2) rotate(8deg);
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            color: #64748b; 
+            font-size: 0.85rem; 
+        }
+
+        /* Keyframes Definitions */
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes floatImage {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+
+        @keyframes floatButton {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+
+        @keyframes badgePulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7); }
+            50% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(56, 189, 248, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(56, 189, 248, 0); }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="https://i.ibb.co/x966Hwh/profile.jpg" alt="Rajani Saikia" class="profile-img">
+        <div class="profile-img-container">
+            <img src="https://i.ibb.co/x966Hwh/profile.jpg" alt="Rajani Saikia" class="profile-img">
+        </div>
 
         <h1>Rajani Saikia</h1>
-        <div class="badge">Official Portfolio</div>
+        <div class="badge">Digital Creator & Influencer</div>
 
         <div class="bio">
-            Namaste! Main <strong>Rajani Saikia</strong> (RAZZ) hoon. Ye meri official personal website hai. Yahan aap mere social media accounts par mujhse jud sakte hain.
+            Welcome to my official personal space! I am <strong>Rajani Saikia (RAZZ)</strong>, a passionate digital content creator and influencer based in <strong>Nagaon, Assam</strong>. I create engaging social media content and share my personal creative journey. Explore my official handles below to connect with me.
         </div>
 
         <div class="links-container">
-            <a href="https://www.instagram.com/saikia_lora_46?igsh=bTJycDV3dGxubTlp" target="_blank" class="link-card">📸 Follow on Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=61593109409585" target="_blank" class="link-card">📘 Facebook Profile</a>
-            <a href="https://youtube.com/@joshimomentofficial?si=qrcjaN6P2wJ8qRgb" target="_blank" class="link-card">▶️ YouTube Channel</a>
+            <a href="https://www.instagram.com/saikia_lora_46?igsh=bTJycDV3dGxubTlp" target="_blank" class="link-card">
+                <i class="fa-brands fa-instagram"></i> Follow on Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61593109409585" target="_blank" class="link-card">
+                <i class="fa-brands fa-facebook-f"></i> Facebook Profile
+            </a>
+            <a href="https://youtube.com/@joshimomentofficial?si=qrcjaN6P2wJ8qRgb" target="_blank" class="link-card">
+                <i class="fa-brands fa-youtube"></i> YouTube Channel
+            </a>
         </div>
     </div>
 
@@ -46,4 +230,3 @@
 
 </body>
 </html>
-
