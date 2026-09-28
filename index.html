@@ -1,310 +1,396 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshi Moment Official | Official Hub</title>
     
-    <!-- Primary SEO Meta Tags -->
-    <title>Rajani Saikia (RAZZ) - Official Personal Space | Creator from Assam</title>
-    <meta name="title" content="Rajani Saikia (RAZZ) - Official Personal Space | Creator from Assam">
-    <meta name="description" content="Discover the official personal website of Rajani Saikia (RAZZ), a digital creator and influencer based in Nagaon, Assam. Connect through official social media links.">
-    <meta name="keywords" content="Rajani Saikia, RAZZ, Rajani Saikia Creator Assam, Nagaon Influencer, Rajani Saikia official website, Rajani Saikia links">
-    <meta name="author" content="Rajani Saikia">
-    <meta name="robots" content="index, follow">
-
-    <!-- Official Favicon Tags -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rajanisaikia.github.io/">
-    <meta property="og:title" content="Rajani Saikia (RAZZ) - Official Personal Space">
-    <meta property="og:description" content="Discover the official personal website of Rajani Saikia (RAZZ), a digital creator based in Assam.">
-    <meta property="og:image" content="https://rajanisaikia.github.io/apple-touch-icon.png">
-
-    <!-- Google Search Console Verification Tag -->
-    <meta name="google-site-verification" content="-P_ff8dNEgurmAA8dZp9aXvnaGexHoEXtKmlRwD3A9M" />
-
-    <!-- Schema.org Structured Data for Google Search -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Rajani Saikia",
-      "alternateName": "RAZZ",
-      "jobTitle": "Digital Creator & Influencer",
-      "image": "https://rajanisaikia.github.io/apple-touch-icon.png",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Nagaon",
-        "addressRegion": "Assam",
-        "addressCountry": "India"
-      },
-      "url": "https://rajanisaikia.github.io",
-      "sameAs": [
-        "https://www.instagram.com/saikia_lora_46",
-        "https://www.facebook.com/profile.php?id=61593109409585",
-        "https://youtube.com/@joshimomentofficial"
-      ]
-    }
-    </script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/v6r2pwVG/IMG-20260928-103015.png" type="image/png">
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        
-        body { 
-            background: #0b0f19;
-            color: #f1f5f9; 
-            min-height: 100vh; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between; 
-            overflow-x: hidden;
+        :root {
+            --bg-color: #08080a;
+            --card-bg: rgba(18, 18, 22, 0.8);
+            --border-glow: rgba(239, 68, 68, 0.4);
+            --red-glow: #ef4444;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
             background-image: 
-                radial-gradient(circle at 20% 20%, rgba(16, 185, 129, 0.22) 0%, transparent 40%),
-                radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.22) 0%, transparent 40%);
+                radial-gradient(at 50% 0%, rgba(239, 68, 68, 0.2) 0px, transparent 65%),
+                radial-gradient(at 100% 100%, rgba(185, 28, 28, 0.15) 0px, transparent 50%);
             background-attachment: fixed;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 0 40px 0;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
 
-        .container { 
-            max-width: 580px; 
-            margin: 0 auto; 
-            padding: 45px 20px; 
-            text-align: center;
+        .container {
+            width: 100%;
+            max-width: 480px;
         }
 
-        /* Profile Box Dark Glassmorphism */
-        .profile-box {
-            background: rgba(15, 23, 42, 0.7);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(16, 185, 129, 0.35);
-            border-radius: 24px;
-            padding: 35px 20px;
-            margin-bottom: 25px;
-            box-shadow: 0 0 35px rgba(16, 185, 129, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            animation: popupSlide 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards, floatElement 6s ease-in-out infinite 2.5s;
-            opacity: 0;
-        }
-
-        .profile-img-container {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 15px;
-            width: 150px;
+        /* Banner Slide Animation (2.5 Seconds) */
+        .banner-container {
+            width: 100%;
             height: 150px;
+            background: url('https://i.ibb.co/Y4nxFn0b/d03bb003-55e9-427c-aaa0-8308790b8983.jpg') center/cover no-repeat;
+            position: relative;
+            border-bottom: 2px solid var(--red-glow);
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+            opacity: 0;
+            animation: slideInLeft 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .profile-header {
+            padding: 0 20px;
+            margin-top: -45px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid #10b981;
-            box-shadow: 0 0 25px rgba(16, 185, 129, 0.5);
-            animation: floatImage 4s ease-in-out infinite, pulseGlow 3s ease-in-out infinite alternate;
+            object-fit: cover;
+            border: 3px solid #18181b;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            background: #000;
+            animation: fadeInDown 1s ease forwards;
         }
 
-        .profile-img { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover; 
-            object-position: center 10%;
-            transform: scale(1.15);
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 10px;
+            margin-bottom: 2px;
         }
 
-        h1 { 
-            font-size: 2.2rem; 
-            font-weight: 700; 
-            color: #ffffff; 
-            margin-bottom: 6px; 
-            letter-spacing: 0.5px;
-            text-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
-        }
-
-        .username {
-            font-size: 0.95rem;
-            color: #38bdf8;
-            margin-bottom: 15px;
+        .tagline {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
             font-weight: 500;
-            text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+            margin-bottom: 15px;
         }
 
-        .badge { 
-            display: inline-block; 
-            background: rgba(16, 185, 129, 0.12); 
-            color: #a7f3d0; 
-            font-size: 0.85rem; 
-            font-weight: 600; 
-            padding: 7px 18px; 
-            border-radius: 20px; 
-            border: 1px solid rgba(16, 185, 129, 0.4);
-            box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
-        }
-
-        /* Bio Box Glowing */
-        .bio { 
-            font-size: 0.98rem; 
-            color: #cbd5e1; 
-            line-height: 1.75; 
-            margin-bottom: 25px; 
-            background: rgba(15, 23, 42, 0.6); 
+        .about-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-glow);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            padding: 24px; 
-            border-radius: 20px; 
-            border: 1px solid rgba(59, 130, 246, 0.35); 
-            box-shadow: 0 0 25px rgba(59, 130, 246, 0.15);
-            text-align: center;
+            border-radius: 14px;
+            padding: 16px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .about-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--red-glow);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .about-text {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        .highlight-red {
+            color: var(--red-glow);
+            font-weight: 600;
+            text-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+        }
+
+        .content {
+            padding: 0 20px;
+        }
+
+        .animated-item {
             opacity: 0;
-            animation: popupSlide 2.5s cubic-bezier(0.22, 1, 0.36, 1) 0.4s forwards, floatElement 6s ease-in-out infinite 2.9s;
+            animation: fadeInUp 4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
 
-        .bio strong {
-            color: #38bdf8;
-            text-shadow: 0 0 6px rgba(56, 189, 248, 0.4);
+        .delay-1 { animation-delay: 0.4s; }
+        .delay-2 { animation-delay: 1.0s; }
+        .delay-3 { animation-delay: 1.8s; }
+        .delay-4 { animation-delay: 2.5s; }
+        .delay-5 { animation-delay: 3.2s; }
+        .delay-6 { animation-delay: 3.9s; }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 25px;
         }
 
-        /* Links Container */
-        .links-container { 
-            display: flex; 
-            flex-direction: column; 
-            gap: 16px; 
-            margin-bottom: 40px; 
-        }
-
-        /* Glowing Link Buttons */
-        .link-card { 
-            position: relative;
-            background: rgba(15, 23, 42, 0.65); 
-            color: #f8fafc; 
-            text-decoration: none; 
-            padding: 18px 22px; 
-            border-radius: 16px; 
-            font-weight: 600; 
-            font-size: 1rem; 
-            border: 1px solid rgba(255, 255, 255, 0.15); 
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            gap: 14px; 
-            opacity: 0;
-            animation: popupSlide 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards, floatElement 5s ease-in-out infinite;
+            padding: 16px 18px;
+            border-radius: 14px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .link-card:nth-child(1) { animation-delay: 0.8s, 3.3s; }
-        .link-card:nth-child(2) { animation-delay: 1.2s, 3.7s; }
-        .link-card:nth-child(3) { animation-delay: 1.6s, 4.1s; }
-
-        .link-card i { 
-            font-size: 1.3rem; 
-            transition: transform 0.3s ease;
+        .link-card:hover {
+            border-color: var(--red-glow);
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+            transform: translateY(-3px);
+            background: rgba(30, 30, 38, 0.9);
         }
 
-        /* Glowing Hover Effects */
-        .link-card:hover { 
-            transform: translateY(-5px) scale(1.02); 
-            animation-play-state: running, paused;
+        .link-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
 
-        .link-card.instagram:hover { 
-            border-color: #E1306C; 
-            background: rgba(225, 48, 108, 0.15);
-            box-shadow: 0 0 25px rgba(225, 48, 108, 0.5); 
-            color: #ffffff;
-        }
-        .link-card.instagram:hover i { color: #E1306C; text-shadow: 0 0 8px #E1306C; }
-
-        .link-card.facebook:hover { 
-            border-color: #1877F2; 
-            background: rgba(24, 119, 242, 0.15);
-            box-shadow: 0 0 25px rgba(24, 119, 242, 0.5); 
-            color: #ffffff;
-        }
-        .link-card.facebook:hover i { color: #1877F2; text-shadow: 0 0 8px #1877F2; }
-
-        .link-card.youtube:hover { 
-            border-color: #FF0000; 
-            background: rgba(255, 0, 0, 0.15);
-            box-shadow: 0 0 25px rgba(255, 0, 0, 0.5); 
-            color: #ffffff;
-        }
-        .link-card.youtube:hover i { color: #FF0000; text-shadow: 0 0 8px #FF0000; }
-
-        footer { 
-            text-align: center; 
-            padding: 25px; 
-            color: #64748b; 
-            font-size: 0.85rem; 
+        .link-left i {
+            font-size: 1.2rem;
+            color: var(--red-glow);
+            width: 20px;
         }
 
-        /* Slow Smooth Popup & Slide Entry Animation (2.5s) */
-        @keyframes popupSlide {
-            0% {
-                opacity: 0;
-                transform: translateY(50px) scale(0.92);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0px) scale(1);
-            }
+        .link-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
         }
 
-        /* Floating & Glow Animations */
-        @keyframes floatElement {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-7px); }
+        .arrow-icon {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            transition: transform 0.2s ease;
         }
 
-        @keyframes floatImage {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-5px); }
+        .link-card:hover .arrow-icon {
+            color: var(--red-glow);
+            transform: translateX(3px);
         }
 
-        @keyframes pulseGlow {
-            0% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.5); border-color: #10b981; }
-            100% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); border-color: #3b82f6; }
+        /* Video Section */
+        .video-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-glow);
+            backdrop-filter: blur(10px);
+            border-radius: 14px;
+            padding: 16px;
+            margin-bottom: 25px;
+        }
+
+        .section-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--red-glow);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .footer-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+        }
+
+        .share-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.85rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .share-btn:hover {
+            color: var(--red-glow);
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        @keyframes slideInLeft {
+            0% { opacity: 0; transform: translateX(-100%); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="profile-box">
-            <div class="profile-img-container">
-                <img src="https://i.ibb.co/v6r2pwVG/IMG-20260928-103015.png" alt="Rajani Saikia (RAZZ)" class="profile-img">
-            </div>
+        <!-- Banner Container -->
+        <div class="banner-container"></div>
 
-            <h1>Rajani Saikia</h1>
-            <div class="username">@Rajani_Saikia</div>
-            <div class="badge">Digital Creator & Influencer</div>
-        </div>
+        <div class="content">
+            <header class="profile-header">
+                <img src="https://i.ibb.co/v6r2pwVG/IMG-20260928-103015.png" alt="Rajani Saikia" class="avatar">
+                <h1 class="animated-item delay-1">Rajani Saikia</h1>
+                <p class="tagline animated-item delay-1">Digital Creator & Content Maker</p>
 
-        <div class="bio">
-            Welcome to my official digital space! I am <strong>Rajani Saikia (RAZZ)</strong>, a passionate content creator based in <strong>Nagaon, Assam</strong>. Connect with my official handles below.
-        </div>
+                <div class="about-box animated-item delay-2">
+                    <span class="about-title"><i class="fa-regular fa-user"></i> About Me</span>
+                    <p class="about-text">Hi, I'm <span class="highlight-red">Rajani Saikia</span> from <span class="highlight-red">Nagaon, Assam</span>! I create engaging videos and digital content. Welcome to my official space—explore my platforms below!</p>
+                </div>
+            </header>
 
-        <div class="links-container">
-            <a href="https://www.instagram.com/saikia_lora_46?igsh=bTJycDV3dGxubTlp" target="_blank" class="link-card instagram">
-                <i class="fa-brands fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61593109409585" target="_blank" class="link-card facebook">
-                <i class="fa-brands fa-facebook-f"></i> Facebook
-            </a>
-            <a href="https://youtube.com/@joshimomentofficial?si=qrcjaN6P2wJ8qRgb" target="_blank" class="link-card youtube">
-                <i class="fa-brands fa-youtube"></i> YouTube
-            </a>
+            <main class="links">
+                <a href="https://youtube.com/@joshimomentofficial?si=FuyDSiiB-e26UyNP" target="_blank" class="link-card animated-item delay-3">
+                    <div class="link-left">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span class="link-title">YouTube Channel</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                </a>
+
+                <!-- Updated Instagram Link -->
+                <a href="https://www.instagram.com/saikia_lora_46?stkn=bTJycDV3dGxubTlp" target="_blank" class="link-card animated-item delay-3">
+                    <div class="link-left">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span class="link-title">Instagram</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                </a>
+
+                <!-- Updated Facebook Link -->
+                <a href="https://www.facebook.com/profile.php?id=61594597154060" target="_blank" class="link-card animated-item delay-4">
+                    <div class="link-left">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span class="link-title">Facebook</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                </a>
+
+                <a href="https://wa.me/qr/EIDBT3PGQWUJJ1" target="_blank" class="link-card animated-item delay-4">
+                    <div class="link-left">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span class="link-title">WhatsApp Direct</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                </a>
+            </main>
+
+            <!-- Latest Video Player -->
+            <section class="video-box animated-item delay-5">
+                <span class="section-label">Latest Content</span>
+                <div class="video-container">
+                    <iframe id="latest-yt-video" title="Latest Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <footer class="footer-action animated-item delay-6">
+                <button class="share-btn" onclick="copyWebsiteLink()">
+                    <i class="fa-regular fa-copy"></i> Copy Link
+                </button>
+                <span class="copyright">© 2026 Rajani Saikia</span>
+            </footer>
         </div>
     </div>
 
-    <footer>
-        © 2026 Rajani Saikia. All rights reserved.
-    </footer>
+    <!-- Live Auto Fetch Script -->
+    <script>
+        const channelID = "UC2gdTQRYzjIccZbDKclIIDQ";
+        const rssFeedUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=" + channelID);
 
+        fetch(rssFeedUrl)
+            .then(response => response.json())
+            .then(data => {
+                if (data.items && data.items.length > 0) {
+                    const videoUrl = data.items[0].link;
+                    let videoId = "";
+                    if (videoUrl.includes("v=")) {
+                        videoId = videoUrl.split("v=")[1].split("&")[0];
+                    } else if (videoUrl.includes("shorts/")) {
+                        videoId = videoUrl.split("shorts/")[1].split("?")[0];
+                    }
+                    if (videoId) {
+                        document.getElementById("latest-yt-video").src = "https://www.youtube.com/embed/" + videoId;
+                    }
+                }
+            })
+            .catch(error => {
+                console.error("Error loading video:", error);
+            });
+
+        function copyWebsiteLink() {
+            navigator.clipboard.writeText(window.location.href);
+            alert("Website link copied!");
+        }
+    </script>
 </body>
 </html>
